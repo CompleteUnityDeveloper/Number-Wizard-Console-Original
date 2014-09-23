@@ -3,17 +3,22 @@ using System.Collections;
 
 public class NumberWizards : MonoBehaviour {
 	// Use this for initialization
-	int max = 1000;
-	int min = 1;
-	int guess = 500;
+	int max;
+	int min;
+	int guess;
 	
 	void Start () {
 		StartGame();
 	}
 	
 	void StartGame () {
+		max = 1000;
+		min = 1;
+		guess = 500;
+		
 		max = max + 1;
 		
+		print ("========================");
 		print ("Welcome to Number Wizard");
 		print ("Pick a number in your head, but don't tell me!");
 		
@@ -34,6 +39,7 @@ public class NumberWizards : MonoBehaviour {
 			NextGuess();
 		} else if (Input.GetKeyDown(KeyCode.Return)) {
 			print("I won!");
+			StartGame();
 		}
 	}
 	
