@@ -8,6 +8,10 @@ public class NumberWizards : MonoBehaviour {
 	int guess = 500;
 	
 	void Start () {
+		StartGame();
+	}
+	
+	void StartGame () {
 		max = max + 1;
 		
 		print ("Welcome to Number Wizard");
@@ -24,14 +28,18 @@ public class NumberWizards : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.UpArrow)) {
 			min = guess;
-			guess = (max + min) / 2;
-			print ("Higher or lower than " + guess);
+			NextGuess();
 		} else if (Input.GetKeyDown(KeyCode.DownArrow)) {
 			max = guess;
-			guess = (max + min) / 2;
-			print ("Higher or lower than " + guess);
+			NextGuess();
 		} else if (Input.GetKeyDown(KeyCode.Return)) {
 			print("I won!");
 		}
+	}
+	
+	void NextGuess () {
+		guess = (max + min) / 2;
+		print ("Higher or lower than " + guess);
+		print ("Up = higher, down = lower, return = equal");
 	}
 }
