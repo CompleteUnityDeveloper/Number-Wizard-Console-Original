@@ -16,17 +16,17 @@ public class NumberWizards : MonoBehaviour {
 		min = 1;
 		guess = 500;
 		
-		max = max + 1;
-		
 		print ("========================");
 		print ("Welcome to Number Wizard");
 		print ("Pick a number in your head, but don't tell me!");
 		
 		print ("The highest number you can pick is " + max);
-		print ("The lowest number you can pick it " + min);
+		print ("The lowest number you can pick is " + min);
 		
-		print ("Is the number higher or lower than " + guess);
+		print ("Is the number higher or lower than " + guess + "?");
 		print ("Up = higher, down = lower, return = equal");
+
+		max = max + 1;
 	}
 	
 	// Update is called once per frame
