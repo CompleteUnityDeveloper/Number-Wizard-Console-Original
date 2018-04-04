@@ -33,15 +33,14 @@ public class NumberWizard : MonoBehaviour
             print("Up arrow pressed");
         }
 
-        //Challenge: Check what the user has pressed... down and correct+ printing to console
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             print("Down arrow pressed");
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        else if(Input.GetKeyDown(KeyCode.Return))
         {
-            print("I won!");
-        }
+                print("I won!");
+        }    
     }
 }
