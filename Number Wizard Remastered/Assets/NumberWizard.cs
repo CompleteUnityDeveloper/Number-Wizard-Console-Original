@@ -11,11 +11,12 @@ public class NumberWizard : MonoBehaviour {
         print("Pick a number, but don't tell me!");
 
         // 
-        int wholeNumber; // This is a declaration: A Variable of type interger, named wholeNumber 
         int min = 1; // This declaration has been instantiated: An interger variable, named minimum, set to a value of 1.
         int max = 1000; //Challenge: to declare and instantiate maximum variable
 
-        //Check the console for warnings- we have declared and instantiated but have'nt used any of these variables!
+        //We combine strings with our new variable, note it is combining a string and interger together for us.
+        print("The highest number you can pick is " + max); //example statment
+        print("The lowest number you can pick it " + min);  //challenge statement
 
     }
 	
