@@ -9,6 +9,7 @@ public class NumberWizard : MonoBehaviour
     int min = 1; 
     int max = 1000; 
     int guess = 500;
+    //int max 1001; explain why this is not the solution
 
     // Use this for initialization
     void Start()
@@ -30,15 +31,28 @@ public class NumberWizard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        max = 1001; //challenge bug fix
+        //max = max + 1; Explain why this isn't a solution
         //Example: Check what the user has pressed... if up, print to console "Up"
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("Up arrow pressed");
+             
+            //print("Up arrow pressed");
+            //Instruction
+            min = guess;
+            guess = (max + min) / 2;
+            print("Higher or lower than " + guess);
+            //Can you find and Fix the 999 bug?
         }
 
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            print("Down arrow pressed");
+            //print("Down arrow pressed");
+            //Challenge
+            max = guess;
+            guess = (max + min) / 2;
+            print("Higher or lower than " + guess);
         }
 
         else if(Input.GetKeyDown(KeyCode.Return))
