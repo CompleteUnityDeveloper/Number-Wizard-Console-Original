@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class NumberWizard : MonoBehaviour
 {
+    // Moving these variables out of the Start Method, means we can use them again in the update and other methods too.
+    // We have broadened their scope.
+    int min = 1; 
+    int max = 1000; 
+    int guess = 500;
 
     // Use this for initialization
     void Start()
@@ -12,14 +17,12 @@ public class NumberWizard : MonoBehaviour
         print("Pick a number, but don't tell me!");
 
         // 
-        int min = 1; // This declaration has been instantiated: An interger variable, named minimum, set to a value of 1.
-        int max = 1000; //Challenge: to declare and instantiate maximum variable
 
         //We combine strings with our new variable, note it is combining a string and interger together for us.
         print("The highest number you can pick is " + max); //example statment
         print("The lowest number you can pick it " + min);  //challenge statement
 
-        print("Is the number higher or lower than 500?"); // Ask question
+        print("Is the number higher or lower than " + guess + "?"); // Ask question
         print("Up = higher, down = lower, return = equal"); // Tell user what to do
 
     }
