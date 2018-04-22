@@ -15,8 +15,8 @@ public class NumberWizard : MonoBehaviour
 	
 	void Start ()
     {
-        Debug.Assert(highestAllowed > lowestAllowed);
-		StartGame();
+        Debug.Assert(highestAllowed > lowestAllowed); // simple check
+        StartGame();
 	}
 	
     // Update is called once per frame
@@ -73,8 +73,8 @@ public class NumberWizard : MonoBehaviour
 
     private void NextGuess ()
     {
-		guess = (max + min) / 2;
-		Debug.Log ("Higher or lower than " + guess);
+        guess = (max + min) / 2;
+        Debug.Log ("Higher or lower than " + guess);
         move++;
 	}
 }
