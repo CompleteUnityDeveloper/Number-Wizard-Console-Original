@@ -7,7 +7,7 @@ public class NumberWizard
     private int max;
     private int guess;
 
-    public NumberWizard(int lowestAllowed, int highestAllowed)
+    public NumberWizard(int lowestAllowed, int highestAllowed) // constructor
     {
         min = lowestAllowed;
         max = highestAllowed + 1; // because of rounding-down

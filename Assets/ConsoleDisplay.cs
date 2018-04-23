@@ -1,14 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ConsoleDisplay : MonoBehaviour
+public class ConsoleDisplay : MonoBehaviour // so can talk to console & inspector
 {
 	// configuration parameters
     [SerializeField] int lowestAllowed = 1;
     [SerializeField] int highestAllowed = 1000;
-
-    // state variables
 
     // references to other objects
     NumberWizard numberWizard;
@@ -16,7 +12,7 @@ public class ConsoleDisplay : MonoBehaviour
     void Start()
     {
         Debug.Assert(highestAllowed > lowestAllowed); // simple check
-        numberWizard = new NumberWizard(lowestAllowed, highestAllowed);
+        numberWizard = new NumberWizard(lowestAllowed, highestAllowed); // new instance
         DisplayIntro();
     }
 
@@ -30,7 +26,6 @@ public class ConsoleDisplay : MonoBehaviour
         Debug.Log("========================");
         Debug.Log("Welcome to Number Wizard");
         Debug.Log("Pick a number in your head, but don't tell me!");
-
         Debug.Log("Pick a number between " + lowestAllowed + " and " + highestAllowed);
 
         var initialGuess = numberWizard.GetGuess();
@@ -55,7 +50,7 @@ public class ConsoleDisplay : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("I guessed your number!");
-            Start();
+            Start(); // note you can also call Start() yourself
         }
     }
 }
