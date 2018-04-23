@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NumberWizard.cs">
     <Files>
-      <File FileName="Assets/Scripts/NumberWizard.cs" Line="4" Column="26" />
+      <File FileName="Assets/Scripts/NumberWizard.cs" Line="41" Column="5" />
+      <File FileName="Assets/ConsoleDisplay.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
