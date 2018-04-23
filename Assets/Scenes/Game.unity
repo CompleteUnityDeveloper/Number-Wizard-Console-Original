@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowestAllowed: 1
-  highestAllowed: 1000
+  highestAllowed: 2
 --- !u!4 &1463471956
 Transform:
   m_ObjectHideFlags: 0
