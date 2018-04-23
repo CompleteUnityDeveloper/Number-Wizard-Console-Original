@@ -37,13 +37,13 @@ public class ConsoleDisplay : MonoBehaviour // so can talk to console & inspecto
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            numberWizard.GetHigherGuess();
+            numberWizard.GuessHigher();
             var newGuess = numberWizard.GetGuess();
             Debug.Log("Higher or lower than " + newGuess);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            numberWizard.GetLowerGuess();
+            numberWizard.GuessLower();
             var newGuess = numberWizard.GetGuess();
             Debug.Log("Higher or lower than " + newGuess);
         }

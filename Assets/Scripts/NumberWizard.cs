@@ -19,17 +19,15 @@ public class NumberWizard
         return guess;
     }
 
-    public int GetHigherGuess()
+    public void GuessHigher()
     {
         min = guess;
         guess = (max + min) / 2;
-        return guess;
     }
 
-    public int GetLowerGuess()
+    public void GuessLower()
     {
         max = guess;
         guess = (max + min) / 2;
-        return guess;
     }
 }
